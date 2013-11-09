@@ -60,7 +60,7 @@
         alt: 'Twitter Share Button',
         shareUrl: "https://twitter.com/share?url=" + exOptions.url + "&text=" + exOptions.text,
         commentUrl: "https://twitter.com/search/?q=" + exOptions.url,
-        countUrl: "http://urls.api.twitter.com/1/urls/count.json?url=" + exOptions.url,
+        countUrl: "http://cdn.api.twitter.com/1/urls/count.json?url=" + exOptions.url,
         jsonpFunc: function(json, cb) {
           var _ref;
           return cb((_ref = json.count) != null ? _ref : 0);
